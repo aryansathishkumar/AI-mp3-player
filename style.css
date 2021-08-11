@@ -1,0 +1,53 @@
+body
+{
+    background: url("background.jpg");
+    background-size:cover;
+}
+#title
+{
+    background-color: Orange;
+    font-size: xx-large;
+    box-shadow: 3px 3px 80px white;
+    font-family: 'Palette Mosaic', cursive;
+}
+#note
+{
+    font-size: 32px; 
+    font-family: 'Lobster', cursive;
+}
+.img
+{
+    width: 70%;
+}
+#disk_speed_div
+{
+    width:20%;
+    height: 20%;
+    float: left;
+}
+.play
+{
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.stop
+{
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    display:none;
+}
+canvas
+{
+    margin-left:34%;
+    margin-top: 2%;
+    animation-name: canvas-border;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes canvas-border
+{
+   from{box-shadow: 1px 1px 30px white, 20px 20px 80px orange}
+   to{box-shadow: 1px 1px 30px grey, 20px 20px 80px blue}
+}
