@@ -1,7 +1,8 @@
 function preload()
 {
-    
+    song = loadSound("music.mp3");
 }
+time="";
 
 function setup()
 {
@@ -31,8 +32,21 @@ function getpose(results)
 function draw()
 {
     image(video, 0, 0, 450, 350);
+    if(time == "time"){
+    setTimeout(function(){
+        setTimeout(function(){
+            tint("orange");
+         1000});
+        tint("cyan");
+    2000});
+        }
+        else
+        {
+            tint("white");
+        }
+    
 }
-function sing()
+function play()
 {
     sound.play();
     document.getElementById("play").style.display = "none";
@@ -44,3 +58,15 @@ function stop_sing()
     document.getElementById("stop").style.display = "none";
     document.getElementById("play").style.display = "inline";
 }
+function disco()
+{
+    if(time=="")
+    {
+    time = "time";
+    }
+    else if(time=="time")
+    {
+        time="";
+    }
+}
+
